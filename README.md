@@ -5,7 +5,7 @@ Ideal para artistas, tatuadores e profissionais criativos que desejam apresentar
 
 ## 📸 Preview
 
-![Preview do Projeto](images\preview.png)
+![Preview do Projeto](./images/preview.png)
 
 ## 🚀 Demonstração
 
