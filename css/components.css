@@ -1,0 +1,222 @@
+/* Component styles */
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--color-white);
+    color: var(--color-ink);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-silver);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--color-white);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Filter Buttons */
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-ink);
+}
+
+.filter-btn.active {
+    background-color: var(--color-white);
+    color: var(--color-ink);
+    border-color: var(--color-white);
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    transition: all var(--transition-medium);
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
+.portfolio-item.filtered {
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--color-ink), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .content {
+    transform: translateY(0);
+}
+
+.portfolio-item .category {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-silver);
+    font-family: var(--font-body);
+}
+
+.portfolio-item .title {
+    font-size: 1.25rem;
+    font-family: var(--font-display);
+    color: var(--color-white);
+    margin-top: 0.25rem;
+}
+
+/* Contact Cards */
+.contact-card {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contact-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.contact-card .icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--color-white);
+    color: var(--color-ink);
+    transform: translateY(-3px);
+}
+
+.social-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Section Components */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-label {
+    color: var(--color-silver);
+    letter-spacing: 0.3em;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.section-line {
+    width: 4rem;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3.75rem;
+    }
+}
+
+/* Stats */
+.stat-number {
+    font-family: var(--font-display);
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-silver);
+}
+
+/* Quote */
+.quote {
+    font-family: var(--font-accent);
+    font-style: italic;
+    color: var(--color-white);
+    font-size: 1.125rem;
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+}

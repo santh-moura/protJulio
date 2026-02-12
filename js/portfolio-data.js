@@ -1,0 +1,98 @@
+const portfolioData = [
+    {
+        id: 1,
+        category: "minimalista",
+        title: "Linhas Puras",
+        image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800&q=80",
+        description: "Design minimalista com linhas finas",
+    },
+    {
+        id: 2,
+        category: "fine-line",
+        title: "Delicadeza Extrema",
+        image: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=800&q=80",
+        description: "Detalhes precisos em fine line",
+    },
+    {
+        id: 3,
+        category: "realismo",
+        title: "Retrato em Preto",
+        image: "https://kimi-web-img.moonshot.cn/img/rocknroll-tattoos.com/76de6f8f72e98c5c2b48c5394e97c12595d5339e.jpg",
+        description: "Realismo preto e cinza",
+    },
+    {
+        id: 4,
+        category: "geometria",
+        title: "Padrões Sagrados",
+        image: "https://kimi-web-img.moonshot.cn/img/jeanmarcotattoo.com/e9785ce2c72444e8be86770141a79b191567cd12.jpg",
+        description: "Geometria sagrada completa",
+    },
+    {
+        id: 5,
+        category: "pontilhismo",
+        title: "Mandala Eye",
+        image: "https://kimi-web-img.moonshot.cn/img/cdn.tattooswizard.com/73a57544fe16bdb3a7391da389e31f2b3b22703e",
+        description: "Pontilhismo detalhado",
+    },
+    {
+        id: 6,
+        category: "florais",
+        title: "Rosa Negra",
+        image: "./images/floralcostas.png",
+        description: "Botânica realista",
+    },
+    {
+        id: 7,
+        category: "oriental",
+        title: "Dragão Oriental",
+        image: "https://images.unsplash.com/photo-1562962230-16e4623d36e6?w=800&q=80",
+        description: "Tradicional oriental",
+    },
+    {
+        id: 8,
+        category: "cobertura",
+        title: "Renovação",
+        image: "./images/cobertura.png",
+        description: "Cobertura criativa",
+    },
+    {
+        id: 9,
+        category: "fine-line",
+        title: "Natureza Singela",
+        image: "./images/naturez.png",
+        description: "Fine line botânico",
+    },
+    {
+        id: 10,
+        category: "realismo",
+        title: "Olho que Tudo Vê",
+        image: "https://kimi-web-img.moonshot.cn/img/static.wixstatic.com/386d3739c5a6afcc58d1c73f4d4469ef849754a9.jpg",
+        description: "Realismo intenso",
+    },
+    {
+        id: 11,
+        category: "geometria",
+        title: "Sleeve Geométrico",
+        image: "https://kimi-web-img.moonshot.cn/img/cdn.tattooswizard.com/73a57544fe16bdb3a7391da389e31f2b3b22703e",
+        description: "Braço completo geométrico",
+    },
+    {
+        id: 12,
+        category: "florais",
+        title: "Buquê Eterno",
+        image: "https://kimi-web-img.moonshot.cn/img/rocknroll-tattoos.com/49c9dc4fc17e630b1063bb4ab00bf5037ccc7323.jpg",
+        description: "Flores em realismo",
+    },
+];
+
+// Category labels for display
+const categoryLabels = {
+    minimalista: "Minimalista",
+    "fine-line": "Fine Line",
+    cobertura: "Cobertura",
+    pontilhismo: "Pontilhismo",
+    geometria: "Geometria",
+    florais: "Florais",
+    realismo: "Realismo",
+    oriental: "Oriental",
+};

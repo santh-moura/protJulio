@@ -1,0 +1,17 @@
+{
+    "name": "tattoo-portfolio",
+    "version": "1.0.0",
+    "description": "Studio Tattoo Website",
+    "main": "index.html",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vite": "^4.0.0"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.2.4"
+    }
+}
